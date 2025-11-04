@@ -19,7 +19,7 @@ function checkEmail() {
     }
     
     alert(`Спасибо за подписку! Мы отправили подтверждение на: ${email}`);
-    emailField.value = ''; // Очищаем поле после успешной отправки
+    emailField.value = ''; 
     return true;
 }
 
@@ -84,7 +84,7 @@ function setupScrollSpy() {
     });
 }
 
-// Обработчик для кнопки "Get in touch"
+// Обработчик гет ин точ
 function setupGetInTouchButton() {
     const getInTouchBtn = document.querySelector('.hero-about .btn');
     
@@ -122,7 +122,7 @@ function setupScrollAnimation() {
     });
 }
 
-// Обработчик для логотипа (возврат на главную)
+
 function setupLogoClick() {
     const logo = document.querySelector('.logo');
     
@@ -134,12 +134,12 @@ function setupLogoClick() {
             });
         });
         
-        // Делаем логотип кликабельным
+        // клткабельный лого
         logo.style.cursor = 'pointer';
     }
 }
 
-// Функция для обработки отправки всех форм (если они появятся)
+// Функция для обработки отправки всех форм
 function setupFormHandlers() {
     const forms = document.querySelectorAll('form');
     
@@ -165,5 +165,6 @@ function init() {
     console.log('Game Website initialized successfully!');
 }
 
-// Инициализация при полной загрузке DOM
+
+
 document.addEventListener('DOMContentLoaded', init);
